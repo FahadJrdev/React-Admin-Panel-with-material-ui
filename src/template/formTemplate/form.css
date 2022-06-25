@@ -1,0 +1,32 @@
+.form-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 19.58%);
+    z-index: 200;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.form {
+    position: absolute;
+    width: 100%;
+    z-index: 200;
+    margin-top: 100px;
+}
+
+.form .MuiPaper-root {
+    z-index: 200;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.form .MuiGrid-root {
+    display: flex;
+    justify-content: center;
+}
+
+.form .cancel {
+    cursor: pointer;
+}

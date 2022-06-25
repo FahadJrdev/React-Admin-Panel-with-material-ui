@@ -1,0 +1,64 @@
+.css-o0n0ns-MuiTableCell-root.MuiTableCell-head {
+    background: #2065d1;
+    color: #fff;
+}
+
+.css-kiwbuc-MuiTableCell-root.MuiTableCell-head {
+    background: #2065d1;
+    color: #fff;
+}
+
+.action-edit {
+    text-decoration: underline;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.action-edit:hover {
+    text-decoration: none;
+}
+
+.css-15pcy1q-MuiPaper-root-MuiTableContainer-root {
+    margin-top: 30px;
+}
+
+.Equip .css-1gxfecn-MuiTypography-root {
+    display: none;
+}
+
+.provider .css-1mcnwpj-MuiList-root {
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.provider .css-ucinsk-MuiAvatar-root {
+    width: 60px;
+}
+
+.provider .css-1pqm26d-MuiAvatar-img {
+    object-fit: contain;
+}
+
+.provider .css-1m6607n-MuiListItemAvatar-root {
+    min-width: 80px;
+}
+
+.provider .css-o69gx8-MuiCardMedia-root {
+    width: 50%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.professionals .css-o69gx8-MuiCardMedia-root {
+    width: 65%;
+    border-radius: 16px 16px 0px 0px;
+    margin: 20px auto 0px;
+    height: auto;
+    object-fit: contain;
+}
+
+.css-1jx9kvl {
+    cursor: pointer;
+}
