@@ -24,6 +24,17 @@ import Quotes from './pages/Quotes';
 import EquipmentsDetails from './pages/EquipementsDetail';
 import Contract from './pages/Contract';
 import Documents from './pages/Documents';
+
+// new
+import Personal from './pages/Personal';
+import Ispre from './pages/Isapre';
+import AFP from './pages/AFP';
+import Haber from './pages/Haber';
+import ClasulasAnxo from './pages/ClausulasAnxo';
+import TipoContrato from './pages/TipoContrato';
+import Clausulas from './pages/Clausulas';
+
+
 // ----------------------------------------------------------------------
 
 export default function Router({setAttemptToAddUser, 
@@ -39,7 +50,22 @@ export default function Router({setAttemptToAddUser,
                                 setAttemptToAddContract,
                                 setAttemptToEditContract,
                                 setAttemptToAddDocument,
-                                setAttemptToEditDocument
+                                setAttemptToEditDocument,
+                                // new
+                                setAttemptToAddPersonal,
+                                setAttemptToEditPersonal,
+                                setAttemptToAddIspre,
+                                setAttemptToEditIspre,
+                                setAttemptToAddAFP,
+                                setAttemptToEditAFP,
+                                setAttemptToAddHaber,
+                                setAttemptToEditHaber,
+                                setAttemptToAddClausulasAnxo,
+                                setAttemptToEditClausulasAnxo,
+                                setAttemptToAddTipoContrato,
+                                setAttemptToEditTipoContrato,
+                                setAttemptToAddClausulas,
+                                setAttemptToEditClausulas
                               }) {
   return useRoutes([
     {
@@ -61,6 +87,14 @@ export default function Router({setAttemptToAddUser,
         { path: 'document', element: <Documents setAttemptToAddDocument={setAttemptToAddDocument} setAttemptToEditDocument={setAttemptToEditDocument} /> },
         { path: 'contract', element: <Contract setAttemptToAddContract={setAttemptToAddContract} setAttemptToEditContract={setAttemptToEditContract} /> },
         { path: 'equipment/equimentDetails', element: <EquipmentsDetails setAttemptToAddEquipmentDetails={setAttemptToAddEquipmentDetails} setAttemptToEditEquipmentDetails={setAttemptToEditEquipmentDetails} /> },
+        // New
+        { path: 'personal', element: <Personal setAttemptToAddPersonal={setAttemptToAddPersonal} setAttemptToEditPersonal={setAttemptToEditPersonal} /> },
+        { path: 'ispre', element: <Ispre setAttemptToAddIspre={setAttemptToAddIspre} setAttemptToEditIspre={setAttemptToEditIspre} /> },
+        { path: 'afp', element: <AFP setAttemptToAddAFP={setAttemptToAddAFP} setAttemptToEditAFP={setAttemptToEditAFP} /> },
+        { path: 'haber', element: <Haber setAttemptToAddHaber={setAttemptToAddHaber} setAttemptToEditHaber={setAttemptToEditHaber} /> },
+        { path: 'clasulasanxe', element: <ClasulasAnxo setAttemptToAddClausulasAnxo={setAttemptToAddClausulasAnxo} setAttemptToEditClausulasAnxo={setAttemptToEditClausulasAnxo} /> },
+        { path: 'tipodecontrato', element: <TipoContrato setAttemptToAddTipoContrato={setAttemptToAddTipoContrato} setAttemptToEditTipoContrato={setAttemptToEditTipoContrato} /> },
+        { path: 'clasulas', element: <Clausulas setAttemptToAddClausulas={setAttemptToAddClausulas} setAttemptToEditClausulas={setAttemptToEditClausulas} /> },
       ],
     },
     {

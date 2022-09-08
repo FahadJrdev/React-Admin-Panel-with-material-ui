@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prop-types */
 import React, {useState} from 'react';
@@ -13,20 +14,8 @@ const getIcon = (name) => <Iconify icon={name} width={22} height={22} />;
 function NewForm({title, 
                   initialValue, 
                   inputFormElements, 
-                  setAttemptToAddUser, 
-                  setAttemptToEditUser, 
-                  setAttemptToAddTask, 
-                  setAttemptToEditTask, 
-                  setAttemptToAddProject, 
-                  setAttemptToEditProject, 
-                  setAttemptToAddExpense, 
-                  setAttemptToEditExpense,
-                  setAttemptToAddEquipmentDetails,
-                  setAttemptToEditEquipmentDetails,
-                  setAttemptToAddContract,
-                  setAttemptToEditContract,
-                  setAttemptToAddDocument,
-                  setAttemptToEditDocument
+                  setAttemptToAdd, 
+                  setAttemptToEdit
                 }) {
   const [values, setValues] = useState(initialValue);
   const handleInputChange = e => {
@@ -36,50 +25,16 @@ function NewForm({title,
       [name]: value
     })
   }
+  // console.log(values);
   
   function handleClose(){
-    if(setAttemptToAddUser){
-      setAttemptToAddUser("close");
+    if(setAttemptToAdd){
+      setAttemptToAdd("close");
     }
-    if(setAttemptToEditUser){
-      setAttemptToEditUser("close");
+    if(setAttemptToEdit){
+      setAttemptToEdit("close");
     }
-    if(setAttemptToAddTask){
-      setAttemptToAddTask("close");
-    }
-    if(setAttemptToEditTask){
-      setAttemptToEditTask("close");
-    }
-    if(setAttemptToAddProject){
-      setAttemptToAddProject("close");
-    }
-    if(setAttemptToEditProject){
-      setAttemptToEditProject("close");
-    }
-    if(setAttemptToAddExpense){
-      setAttemptToAddExpense("close");
-    }
-    if(setAttemptToEditExpense){
-      setAttemptToEditExpense("close");
-    }
-    if(setAttemptToAddEquipmentDetails){
-      setAttemptToAddEquipmentDetails("close");
-    }
-    if(setAttemptToEditEquipmentDetails){
-      setAttemptToEditEquipmentDetails("close");
-    }
-    if(setAttemptToAddContract){
-      setAttemptToAddContract("close");
-    }
-    if(setAttemptToEditContract){
-      setAttemptToEditContract("close");
-    }
-    if(setAttemptToAddDocument){
-      setAttemptToAddDocument("close");
-    }
-    if(setAttemptToEditDocument){
-      setAttemptToEditDocument("close");
-    }
+    
   }
 
   function handleSubmit(event){
@@ -104,10 +59,10 @@ function NewForm({title,
               <form method='POST' action='' onSubmit={handleSubmit}>
                 <Grid container spacing={1}>
                   {
-                   inputFormElements ? inputFormElements.map((input,i)=><Element key={i} input={input} handleInputChange={handleInputChange} /> ) : null
+                   inputFormElements ? inputFormElements.map((input,i)=><Element key={i} input={input} handleInputChange={handleInputChange} value={``} /> ) : null
                   }
                   <Grid item xs={12}>
-                    <Button type="submit" variant="contained" color="primary" fullWidth>Submit</Button>
+                    <span onClick={()=>setTimeout(() => {handleClose()}, 100)}><Button type="submit" variant="contained" color="primary" fullWidth>Submit</Button></span>
                   </Grid>
                 </Grid>
               </form>

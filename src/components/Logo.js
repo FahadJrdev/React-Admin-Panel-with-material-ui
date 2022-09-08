@@ -25,7 +25,7 @@ export default function Logo({ disabledLink = false, sx }) {
 
   const logo = (
     <Box sx={{ width: 140, height: 20, ...sx }}>
-      <img src='/static/logo.png' alt='logo' sx={{ objectFit: 'contain' }} width="100%" height="100%" viewBox="0 0 512 512" />
+      <img src='/static/logo.png' alt='logo' width="100%" height="100%"/>
     </Box>
   );
 

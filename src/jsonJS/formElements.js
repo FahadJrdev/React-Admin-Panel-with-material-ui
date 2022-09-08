@@ -1,3 +1,806 @@
+export const initialAddClausulas = {
+    item2: "",
+    item3: "",
+    item4: ""
+}
+
+export const inputAddClausulas = [
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Nombre',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Tipo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item4",
+        placeholder: 'Enter',
+        label: 'Descripción',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    }
+]
+
+export const initialEditClausulas = {
+    item2: "",
+    item3: "",
+    item4: ""
+}
+
+export const inputEditClausulas = [
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Nombre',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Tipo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item4",
+        placeholder: 'Enter',
+        label: 'Descripción',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    }
+]
+
+export const initialAddTipoContrato = {
+    item1: "",
+    item2: ""
+}
+
+export const inputAddTipoContrato = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Nombre',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Descripción',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+]
+
+export const initialEditTipoContrato = {
+    item1: "",
+    item2: ""
+}
+
+export const inputEditTipoContrato = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Nombre',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Descripción',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+]
+
+export const initialAddClausulasAnxo = {
+    item2: "",
+    item3: "",
+    item4: "",
+    item5: ""
+}
+
+export const inputAddClausulasAnxo = [
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Nombre',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Tipo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item4",
+        placeholder: 'Enter',
+        label: 'Descripción',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item5",
+        placeholder: 'Enter',
+        label: 'Modificable',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    }
+]
+
+export const initialEditClausulasAnxo = {
+    item2: "",
+    item3: "",
+    item4: "",
+    item5: ""
+}
+
+export const inputEditClausulasAnxo = [
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Nombre',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Tipo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item4",
+        placeholder: 'Enter',
+        label: 'Descripción',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item5",
+        placeholder: 'Enter',
+        label: 'Modificable',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    }
+]
+
+export const initialAddHaber = {
+    item1: "",
+    item2: "",
+    item3: "",
+    item4: "",
+    item5: ""
+}
+
+export const inputAddHaber = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Codigo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Nombre',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Tipo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item4",
+        placeholder: 'Enter',
+        label: 'Fecha Desde',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item5",
+        placeholder: 'Enter',
+        label: 'Fecha Hasta',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    }
+]
+
+export const initialEditHaber = {
+    item1: "",
+    item2: "",
+    item3: "",
+    item4: "",
+    item5: ""
+}
+
+export const inputEditHaber = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Codigo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Nombre',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Tipo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item4",
+        placeholder: 'Enter',
+        label: 'Fecha Desde',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item5",
+        placeholder: 'Enter',
+        label: 'Fecha Hasta',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    }
+]
+
+export const initialAddAFP = {
+    item1: "",
+    item2: "",
+    item3: ""
+}
+
+export const inputAddAFP = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Codigo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Nombre AFP',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Porcentaje AFP',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    }
+]
+export const initialEditAFP = {
+    item1: "",
+    item2: "",
+    item3: ""
+}
+
+export const inputEditAFP = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Codigo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Nombre AFP',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Porcentaje AFP',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    }
+]
+
+export const initialAddIspre = {
+    item1: ""
+}
+
+export const inputAddIspre = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Nombre Institucion',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    }
+]
+export const initialEditIspre = {
+    item1: ""
+}
+
+export const inputEditIspre = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Nombre Institucion',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 12,
+        field: 'input'
+    }
+]
+
+export const intialAddPersonal = {
+    item1: "", 
+    item2: "", 
+    item3: "", 
+    item4: "",
+    item5: "",
+    item6: "",
+    item7: "",
+    item8: "",
+    item9: "",
+    item10: "",
+    item11: "",
+    item12: ""
+}
+
+export const inputAddPersonal = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Rut',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Primer Apellido',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Segundo Apellido',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item4",
+        placeholder: 'Enter',
+        label: 'Nombre(s)',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item5",
+        placeholder: 'Enter',
+        label: 'Cargo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item6",
+        placeholder: 'Enter',
+        label: 'Previsión',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item7",
+        placeholder: 'Enter',
+        label: 'Salud',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item8",
+        placeholder: 'Enter',
+        label: 'Fecha Nacimiento',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item9",
+        placeholder: 'Enter',
+        label: 'Teléfono',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item10",
+        placeholder: 'Enter',
+        label: 'Correo Electrónico',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item11",
+        placeholder: 'Enter',
+        label: 'Activo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item12",
+        placeholder: 'Enter',
+        label: 'Vendedor',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    }
+]
+export const intialEditPersonal = {
+    item1: "", 
+    item2: "", 
+    item3: "", 
+    item4: "",
+    item5: "",
+    item6: "",
+    item7: "",
+    item8: "",
+    item9: "",
+    item10: "",
+    item11: "",
+    item12: ""
+}
+
+export const inputEditPersonal = [
+    {
+        name: "item1",
+        placeholder: 'Enter',
+        label: 'Rut',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item2",
+        placeholder: 'Enter',
+        label: 'Primer Apellido',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item3",
+        placeholder: 'Enter',
+        label: 'Segundo Apellido',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item4",
+        placeholder: 'Enter',
+        label: 'Nombre(s)',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item5",
+        placeholder: 'Enter',
+        label: 'Cargo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item6",
+        placeholder: 'Enter',
+        label: 'Previsión',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item7",
+        placeholder: 'Enter',
+        label: 'Salud',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item8",
+        placeholder: 'Enter',
+        label: 'Fecha Nacimiento',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item9",
+        placeholder: 'Enter',
+        label: 'Teléfono',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item10",
+        placeholder: 'Enter',
+        label: 'Correo Electrónico',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item11",
+        placeholder: 'Enter',
+        label: 'Activo',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    },
+    {
+        name: "item12",
+        placeholder: 'Enter',
+        label: 'Vendedor',
+        variant: 'outlined',
+        fullWidth: true,
+        required: true,
+        xs: 12,
+        sm: 6,
+        field: 'input'
+    }
+]
+
+
+
 export const initialNewUser = {
     name: '',
     role: '',

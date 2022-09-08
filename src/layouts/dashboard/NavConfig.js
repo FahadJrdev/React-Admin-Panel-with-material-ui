@@ -34,12 +34,12 @@ const navConfig = [{
         icon: getIcon('fa:product-hunt'),
     },
     {
-        title: 'Providers',
+        title: 'Proveedores',
         path: '/dashboard/provider',
         icon: getIcon('fa:qq'),
     },
     {
-        title: 'Professionals',
+        title: 'Profesionales',
         path: '/dashboard/professional',
         icon: getIcon('fa:gg'),
     },
@@ -49,30 +49,65 @@ const navConfig = [{
         icon: getIcon('fa:bandcamp'),
     },
     {
-        title: 'Equipments',
+        title: 'Equipos',
         path: '/dashboard/equipment',
         icon: getIcon('fa:gg-circle'),
     },
     {
-        title: 'Quotes',
+        title: 'Cotizaciones',
         path: '/dashboard/quotes',
         icon: getIcon('fa:scribd'),
     },
     {
-        title: 'Contracts',
+        title: 'Contratos',
         path: '/dashboard/contract',
         icon: getIcon('fa:book'),
     },
     {
-        title: 'Documents',
+        title: 'Documentos',
         path: '/dashboard/document',
         icon: getIcon('fa:file'),
     },
     {
-        title: 'blog',
+        title: 'Blog',
         path: '/dashboard/blog',
         icon: getIcon('eva:file-text-fill'),
     },
+    {
+        title: 'Personal',
+        path: '/dashboard/personal',
+        icon: getIcon('eva:file-text-fill'),
+    },
+    {
+        title: 'Ispre',
+        path: '/dashboard/ispre',
+        icon: getIcon('eva:file-text-fill'),
+    },
+    {
+        title: 'AFP',
+        path: '/dashboard/afp',
+        icon: getIcon('eva:file-text-fill'),
+    },
+    {
+        title: 'Haber',
+        path: '/dashboard/haber',
+        icon: getIcon('eva:file-text-fill'),
+    },
+    {
+        title: 'Clasulas Anxe',
+        path: '/dashboard/clasulasanxe',
+        icon: getIcon('eva:file-text-fill'),
+    },
+    {
+        title: 'Tipo de Contrato',
+        path: '/dashboard/tipodecontrato',
+        icon: getIcon('eva:file-text-fill'),
+    },
+    {
+        title: 'Clasulas',
+        path: '/dashboard/clasulas',
+        icon: getIcon('eva:file-text-fill'),
+    }
     // {
     //   title: 'new',
     //   path: '/dashboard/new',
