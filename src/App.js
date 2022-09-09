@@ -33,7 +33,15 @@ import {initialNewUser,inputNewUser,
         initialAddTipoContrato,inputAddTipoContrato,
         initialEditTipoContrato,inputEditTipoContrato,
         initialAddClausulas,inputAddClausulas,
-        initialEditClausulas,inputEditClausulas
+        initialEditClausulas,inputEditClausulas,
+        initialAddCentro,inputAddCentro,
+        initialEditCentro,inputEditCentro,
+        initialAddMantenedor,inputAddMantenedor,
+        initialEditMantenedor,inputEditMantenedor,
+        initialAddLicencias,inputAddLicencias,
+        initialEditLicencias,inputEditLicencias,
+        initialAddHistorico,inputAddHistorio,
+        initialEditHistorico,inputEditHistorio
       } from './jsonJS/formElements';
 import NewForm from './template/formTemplate';
 // ----------------------------------------------------------------------
@@ -67,6 +75,14 @@ export default function App() {
   const [attemptToEditTipoContrato, setAttemptToEditTipoContrato] = useState("close");
   const [attemptToAddClausulas, setAttemptToAddClausulas] = useState("close");
   const [attemptToEditClausulas, setAttemptToEditClausulas] = useState("close");
+  const [attemptToAddCentro, setAttemptToAddCentro] = useState("close");
+  const [attemptToEditCentro, setAttemptToEditCentro] = useState("close");
+  const [attemptToAddMantenedor, setAttemptToAddMantenedor] = useState("close");
+  const [attemptToEditMantenedor, setAttemptToEditMantenedor] = useState("close");
+  const [attemptToAddLicencias, setAttemptToAddLicencias] = useState("close");
+  const [attemptToEditLicencias, setAttemptToEditLicencias] = useState("close");
+  const [attemptToAddHistorico, setAttemptToAddHistorico] = useState("close");
+  const [attemptToEditHistorico, setAttemptToEditHistorico] = useState("close");
   return (
     <ThemeProvider>
       <ScrollToTop />
@@ -211,6 +227,46 @@ export default function App() {
          ?<NewForm title={`Edit Clasulas`} initialValue={initialEditClausulas} inputFormElements={inputEditClausulas} setAttemptToEdit={setAttemptToEditClausulas}/>
          :<></>
       }
+      {
+         attemptToAddCentro === "open"
+         ?<NewForm title={`Add Centro Costo`} initialValue={initialAddCentro} inputFormElements={inputAddCentro} setAttemptToAdd={setAttemptToAddCentro}/>
+         :<></>
+      }
+      {
+         attemptToEditCentro === "open"
+         ?<NewForm title={`Edit Centro Costo`} initialValue={initialEditCentro} inputFormElements={inputEditCentro} setAttemptToEdit={setAttemptToEditCentro}/>
+         :<></>
+      }
+      {
+         attemptToAddMantenedor === "open"
+         ?<NewForm title={`Add Mantenedor`} initialValue={initialAddMantenedor} inputFormElements={inputAddMantenedor} setAttemptToAdd={setAttemptToAddMantenedor}/>
+         :<></>
+      }
+      {
+         attemptToEditMantenedor === "open"
+         ?<NewForm title={`Edit Mantenedor`} initialValue={initialEditMantenedor} inputFormElements={inputEditMantenedor} setAttemptToEdit={setAttemptToEditMantenedor}/>
+         :<></>
+      }
+      {
+         attemptToAddLicencias === "open"
+         ?<NewForm title={`Add Licencias`} initialValue={initialAddLicencias} inputFormElements={inputAddLicencias} setAttemptToAdd={setAttemptToAddLicencias}/>
+         :<></>
+      }
+      {
+         attemptToEditLicencias === "open"
+         ?<NewForm title={`Edit Licencias`} initialValue={initialEditLicencias} inputFormElements={inputEditLicencias} setAttemptToEdit={setAttemptToEditLicencias}/>
+         :<></>
+      }
+      {
+         attemptToAddHistorico === "open"
+         ?<NewForm title={`Add Historico`} initialValue={initialAddHistorico} inputFormElements={inputAddHistorio} setAttemptToAdd={setAttemptToAddHistorico}/>
+         :<></>
+      }
+      {
+         attemptToEditHistorico === "open"
+         ?<NewForm title={`Edit Historico`} initialValue={initialEditHistorico} inputFormElements={inputEditHistorio} setAttemptToEdit={setAttemptToEditHistorico}/>
+         :<></>
+      }
       <Router 
       setAttemptToAddUser={setAttemptToAddUser} 
       setAttemptToEditUser={setAttemptToEditUser} 
@@ -240,6 +296,14 @@ export default function App() {
       setAttemptToEditTipoContrato={setAttemptToEditTipoContrato}
       setAttemptToAddClausulas={setAttemptToAddClausulas}
       setAttemptToEditClausulas={setAttemptToEditClausulas}
+      setAttemptToAddCentro={setAttemptToAddCentro}
+      setAttemptToEditCentro={setAttemptToEditCentro}
+      setAttemptToAddMantenedor={setAttemptToAddMantenedor}
+      setAttemptToEditMantenedor={setAttemptToEditMantenedor}
+      setAttemptToAddLicencias={setAttemptToAddLicencias}
+      setAttemptToEditLicencias={setAttemptToEditLicencias}
+      setAttemptToAddHistorico={setAttemptToAddHistorico}
+      setAttemptToEditHistorico={setAttemptToEditHistorico}
       />
     </ThemeProvider>
   );

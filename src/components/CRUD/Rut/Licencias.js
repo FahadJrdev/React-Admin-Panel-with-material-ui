@@ -19,13 +19,13 @@ import {
   TablePagination,
 } from '@mui/material';
 // components
-import Page from '../Page';
-import Label from '../Label';
-import Scrollbar from '../Scrollbar';
-import SearchNotFound from '../SearchNotFound';
-import { ListHead } from './ListHeader';
-import { ListToolbar } from './ListToolbar';
-import { MoreMenu } from './ListMoreMenu';
+import Page from '../../Page';
+import Label from '../../Label';
+import Scrollbar from '../../Scrollbar';
+import SearchNotFound from '../../SearchNotFound';
+import { ListHead } from '../ListHeader';
+import { ListToolbar } from '../ListToolbar';
+import { MoreMenu } from '../ListMoreMenu';
 // mock
 
 // ----------------------------------------------------------------------
@@ -36,135 +36,16 @@ const Lists = [
     item3: "Ortiz", 
     item4: "Marco",
     item5: "Electricista",
-    item6: "CAPITAL",
-    item7: "FONASA",
-    item8: "06-11-1979",
-    item9: "13743933",
-    item10: "marcos.muortiz@gmail.com",
-    item11: "SI",
-    item12: "NO",
-    status:"Active"
-  },
-  {
-    item1: "16435547-0", 
-    item2: "Inostroza", 
-    item3: "Lizama", 
-    item4: "Jorge",
-    item5: "Electricista",
-    item6: "CAPITAL",
-    item7: "FONASA",
-    item8: "04-07-1986",
-    item9: "13743933",
-    item10: "marcos.muortiz@gmail.com",
-    item11: "SI",
-    item12: "NO",
-    status:"Active"
-  },
-  {
-    item1: "8187309-7", 
-    item2: "Cereceda", 
-    item3: "Lizama", 
-    item4: "Osvaldo",
-    item5: "Ayudante",
-    item6: "CUPRUM",
-    item7: "FONASA",
-    item8: "01-08-1963",
-    item9: "13743933",
-    item10: "marcos.muortiz@gmail.com",
-    item11: "SI",
-    item12: "NO",
-    status:"Active"
-  },
-  {
-    item1: "11805205-6", 
-    item2: "Figueroa", 
-    item3: "Mora", 
-    item4: "Hector",
-    item5: "Electricista",
-    item6: "CUPRUM",
-    item7: "FONASA",
-    item8: "07-02-1968",
-    item9: "13743933",
-    item10: "h_figueroa_mora@hotmail.com",
-    item11: "SI",
-    item12: "NO",
-    status:"Active"
-  },
-  {
-    item1: "13743933-6", 
-    item2: "Muñoz", 
-    item3: "Ortiz", 
-    item4: "Marco",
-    item5: "Electricista",
-    item6: "CAPITAL",
-    item7: "FONASA",
-    item8: "06-11-1979",
-    item9: "13743933",
-    item10: "marcos.muortiz@gmail.com",
-    item11: "SI",
-    item12: "NO",
-    status:"Active"
-  },
-  {
-    item1: "16435547-0", 
-    item2: "Inostroza", 
-    item3: "Lizama", 
-    item4: "Jorge",
-    item5: "Electricista",
-    item6: "CAPITAL",
-    item7: "FONASA",
-    item8: "04-07-1986",
-    item9: "13743933",
-    item10: "marcos.muortiz@gmail.com",
-    item11: "SI",
-    item12: "NO",
-    status:"Active"
-  },
-  {
-    item1: "8187309-7", 
-    item2: "Cereceda", 
-    item3: "Lizama", 
-    item4: "Osvaldo",
-    item5: "Ayudante",
-    item6: "CUPRUM",
-    item7: "FONASA",
-    item8: "01-08-1963",
-    item9: "13743933",
-    item10: "marcos.muortiz@gmail.com",
-    item11: "SI",
-    item12: "NO",
-    status:"Active"
-  },
-  {
-    item1: "11805205-6", 
-    item2: "Figueroa", 
-    item3: "Mora", 
-    item4: "Hector",
-    item5: "Electricista",
-    item6: "CUPRUM",
-    item7: "FONASA",
-    item8: "07-02-1968",
-    item9: "13743933",
-    item10: "h_figueroa_mora@hotmail.com",
-    item11: "SI",
-    item12: "NO",
     status:"Active"
   }
 ];
 
 const TABLE_HEAD = [
-  { id: 'item1', label: 'Rut', alignCenter: true },
-  { id: 'item2', label: 'Primer Apellido', alignCenter: true },
-  { id: 'item3', label: 'Segundo Apellido', alignCenter: false },
-  { id: 'item4', label: 'Nombre(s)', alignCenter: false },
-  { id: 'item5', label: 'Cargo', alignCenter: false },
-  { id: 'item6', label: 'Previsión', alignCenter: false },
-  { id: 'item7', label: 'Salud', alignCenter: false },
-  { id: 'item8', label: 'Fecha Nacimiento', alignCenter: false },
-  { id: 'item9', label: 'Teléfono', alignCenter: false },
-  { id: 'item10', label: 'Correo Electrónico', alignCenter: false },
-  { id: 'item11', label: 'Activo', alignCenter: false },
-  { id: 'item12', label: 'Vendedor', alignCenter: false },
+  { id: 'item1', label: 'Año', alignCenter: true },
+  { id: 'item2', label: 'Fecha Desde', alignCenter: true },
+  { id: 'item3', label: 'Fecha Hasta', alignCenter: false },
+  { id: 'item4', label: 'Tipo de Licencia', alignCenter: false },
+  { id: 'item5', label: 'Archivo', alignCenter: false },
   { id: '' },
 ];
 
@@ -200,7 +81,7 @@ function applySortFilter(array, comparator, query) {
 }
 
 
-export default function PersonalCrud({setAttemptToAdd, setAttemptToEdit}) {
+export default function Licencias({setAttemptToAdd, setAttemptToEdit}) {
   const [page, setPage] = useState(0);
 
   const [order, setOrder] = useState('asc');
@@ -267,7 +148,7 @@ export default function PersonalCrud({setAttemptToAdd, setAttemptToEdit}) {
         <Container>
           <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
             <Typography variant="h4" gutterBottom>
-              Personal
+              LICENCIAS MÉDICAS
             </Typography>
           </Stack>
 
@@ -287,7 +168,7 @@ export default function PersonalCrud({setAttemptToAdd, setAttemptToEdit}) {
                   />
                   <TableBody>
                     {filteredLists.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row,i) => {
-                      const { item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, status } = row;
+                      const { item1, item2, item3, item4, item5, status } = row;
                       const isItemSelected = selected.indexOf(item1) !== -1;
 
                       return (
@@ -315,13 +196,6 @@ export default function PersonalCrud({setAttemptToAdd, setAttemptToEdit}) {
                           <TableCell align="left" sx={{ color:'text.secondary' }}>{item3}</TableCell>
                           <TableCell align="left" sx={{ color:'text.secondary' }}>{item4}</TableCell>
                           <TableCell align="left" sx={{ color:'text.secondary' }}>{item5}</TableCell>
-                          <TableCell align="left" sx={{ color:'text.secondary' }}>{item6}</TableCell>
-                          <TableCell align="left" sx={{ color:'text.secondary' }}>{item7}</TableCell>
-                          <TableCell align="left" sx={{ color:'text.secondary' }}>{item8}</TableCell>
-                          <TableCell align="left" sx={{ color:'text.secondary' }}>{item9}</TableCell>
-                          <TableCell align="left" sx={{ color:'text.secondary' }}>{item10}</TableCell>
-                          <TableCell align="left" sx={{ color:'text.secondary' }}>{item11}</TableCell>
-                          <TableCell align="left" sx={{ color:'text.secondary' }}>{item12}</TableCell>
                           <TableCell align="left">
                             <Label variant="ghost" color={(status === 'banned' && 'error') || 'success'}>
                               {sentenceCase(status)}

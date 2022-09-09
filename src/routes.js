@@ -33,6 +33,7 @@ import Haber from './pages/Haber';
 import ClasulasAnxo from './pages/ClausulasAnxo';
 import TipoContrato from './pages/TipoContrato';
 import Clausulas from './pages/Clausulas';
+import Rut from './pages/Rut';
 
 
 // ----------------------------------------------------------------------
@@ -65,7 +66,15 @@ export default function Router({setAttemptToAddUser,
                                 setAttemptToAddTipoContrato,
                                 setAttemptToEditTipoContrato,
                                 setAttemptToAddClausulas,
-                                setAttemptToEditClausulas
+                                setAttemptToEditClausulas,
+                                setAttemptToAddCentro,
+                                setAttemptToEditCentro,
+                                setAttemptToAddMantenedor,
+                                setAttemptToEditMantenedor,
+                                setAttemptToAddLicencias,
+                                setAttemptToEditLicencias,
+                                setAttemptToAddHistorico,
+                                setAttemptToEditHistorico
                               }) {
   return useRoutes([
     {
@@ -95,6 +104,15 @@ export default function Router({setAttemptToAddUser,
         { path: 'clasulasanxe', element: <ClasulasAnxo setAttemptToAddClausulasAnxo={setAttemptToAddClausulasAnxo} setAttemptToEditClausulasAnxo={setAttemptToEditClausulasAnxo} /> },
         { path: 'tipodecontrato', element: <TipoContrato setAttemptToAddTipoContrato={setAttemptToAddTipoContrato} setAttemptToEditTipoContrato={setAttemptToEditTipoContrato} /> },
         { path: 'clasulas', element: <Clausulas setAttemptToAddClausulas={setAttemptToAddClausulas} setAttemptToEditClausulas={setAttemptToEditClausulas} /> },
+        { path: 'personal/Rut', element: <Rut setAttemptToAddCentro={setAttemptToAddCentro} 
+                                              setAttemptToEditCentro={setAttemptToEditCentro} 
+                                              setAttemptToAddMantenedor={setAttemptToAddMantenedor}
+                                              setAttemptToEditMantenedor={setAttemptToEditMantenedor}
+                                              setAttemptToAddLicencias={setAttemptToAddLicencias}
+                                              setAttemptToEditLicencias={setAttemptToEditLicencias}
+                                              setAttemptToAddHistorico={setAttemptToAddHistorico}
+                                              setAttemptToEditHistorico={setAttemptToEditHistorico}
+                                         /> }
       ],
     },
     {

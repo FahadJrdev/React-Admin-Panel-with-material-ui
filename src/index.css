@@ -11,6 +11,35 @@
 .ispre .css-1yo1jo6-MuiStack-root{
     justify-content: flex-start;
 }
+
+fieldset{
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 1350px) {
+    .css-heg063-MuiTabs-flexContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .css-heg063-MuiTabs-flexContainer{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 992px) {
+    .css-heg063-MuiTabs-flexContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 html::-webkit-scrollbar,
 body::-webkit-scrollbar,
 .MuiTableContainer-root::-webkit-scrollbar
